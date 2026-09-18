@@ -1,0 +1,22 @@
+[project]
+name = "agro-predict-backend"
+version = "0.1.0"
+description = "Backend services for agricultural supply predictability."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.0",
+    "sqlalchemy[asyncio]>=2.0.0",
+    "asyncpg>=0.29.0",
+    "geoalchemy2>=0.15.0",
+    "alembic>=1.13.0",
+    "pydantic-settings>=2.0.0",
+    "pyjwt>=2.8.0",
+    "pwdlib[argon2]>=0.2.0",
+    "structlog>=24.0.0",
+    "celery[redis]>=5.4.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
